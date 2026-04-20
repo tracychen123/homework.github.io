@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.relative {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+table{
+	width: 180px;
+	top: 10px;
+    left: 10px;
+    border-collapse: collapse;
+    border: 1px black solid;
+}
+td{
+	
+ 	border-collapse: collapse;
+    border: 1px black solid;
+    text-align: left;
+    padding: 10px;
+}
+
+
+tr{
+	
+ 	border-collapse: collapse;
+    border: 1px black solid;
+    text-align: left;
+    padding: 10px;
+}
+tr.a{
+	background-color:yellow;
+ 	border-collapse: collapse;
+    border: 1px black solid;
+    text-align: left;
+    padding: 10px;
+}
+th{ 
+	color: white;
+	background-color:gray;
+ 	border-collapse: collapse;
+    border: 1px black solid;
+    text-align: left;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<table>
+	<tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    </tr>
+    
+    <tr class='a'>
+    <td>1</td>
+    <td>1</td>
+    </tr>
+	<tr>
+    <td>2</td>
+    <td>2</td>
+    </tr>
+    <tr class='a'>
+    <td >3</td>
+    <td>3</td>
+    </tr>
+    
+</table>
+
+<div class="relative">
+This div element has position: fixed;
+</div>
+
+</body>
+</html>
+
+
