@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+.a {
+  
+  border-radius: 8px;
+  padding: 3px 15px; 
+  align: center;
+  outline: 1px solid;
+  outline-color:#2f2f2f;
+  font-style:Roboto Regular;
+  font-size:13px;
+}
+#info{
+background-color: #ffffff;
+
+display:none;
+
+color:#2f2f2f;
+}
+</style>
+</head>
+<body>
+
+
+
+<buttom class='a'onclick='showInfo()'>查看資訊</buttom>
+<div id='info'>
+<p>jhkhjkhj</p>
+<h2>SQL Tutorial</h2>
+<p>Some description here...</p>
+</div>
+
+
+<script>
+        function showInfo() {
+            
+            var info = document.getElementById("info");
+            
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+        
+</script>
+
+</body>
+</html>
+
+
