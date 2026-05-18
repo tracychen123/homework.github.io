@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    
+</head>
+<body>
+
+  
+    <div class="section">
+        <p><strong>1. 原始物件的所有屬性 (Properties):</strong></p>
+        <p id="original-props"></p>
+    </div>
+
+    <div class="section">
+        <p><strong>2. 刪除 age 屬性後的物件內容:</strong></p>
+        <p id="updated-object"></p>
+    </div>
+
+    <script>
+        // 題目給的原始物件
+        var Person = {
+            firstName : "Tony",
+            lastName : "Lee",
+            age : 50,
+            eyeColor : "Blue"
+        };
+
+        // 1. 列出所有屬性
+        var props = Object.keys(Person); // 取得 ['firstName', 'lastName', 'age', 'eyeColor']
+        document.getElementById('original-props').textContent = props.join(', ');
+
+        // 2. 刪除 age 屬性
+        delete Person.age;
+
+        // 3. 印出刪除後的物件
+        document.getElementById('updated-object').textContent = JSON.stringify(Person);
+    </script>
+
+</body>
+</html>
